@@ -1,3 +1,6 @@
+import '../static/styles/components/benefits.less';
+import alwaysOpen from '../static/img/247.png';
+
 function Benefits() {
   return (
     <div id='benefits'>
@@ -6,7 +9,7 @@ function Benefits() {
         <h2>No te pierdas sus increibles beneficios</h2>
       </div>
       <div className='benefit'>
-        <img src='#' alt='' className='benefit-img' />
+        <img src={alwaysOpen} alt='' className='benefit-img' />
         <div>
           <div className='title'>Manten tu negocio abierto 24/7</div>
           <div className='description'>Desde internet puedes mantener tu negocio abierto a toda hora, todos los días del año, incluso mientras tú y tus trabajadores duermen.</div>
