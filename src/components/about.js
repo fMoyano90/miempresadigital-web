@@ -1,28 +1,43 @@
+import "../static/styles/components/about.less";
+import group from "../static/img/group.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+const settingsCarousel = {
+  autoPlay: true,
+  infiniteLoop: true,
+  showStatus: false,
+  showIndicators: false,
+  showThumbs: false
+}
+
 function About() {
   return (
     <div id='about'>
-      <h1>Trabaja con nosotros, somos tú mejor partner digital</h1>
-      <div>
-        <img src='' alt='' />
-        <div>
-          Un equipo multidiciplinario se encargara del desarrollo y de las
-          mejoras continuas en tus productos
+      <h1>Somos el mejor partner digital</h1>
+      <Carousel className='our-benefits' {...settingsCarousel}>
+        <div className='our-benefit'>
+          <img src={group} alt='' />
+          <h3>
+            Un equipo multidiciplinario se encargara del desarrollo y de las
+            mejoras continuas en tus productos
+          </h3>
         </div>
-      </div>
-      <div>
-        <img src='' alt='' />
-        <div>
-          Participa continua y activamente en la elaboración de tus productos,
-          siempre sabras en que estamos
+        <div className='our-benefit'>
+          <img src={group} alt='' />
+          <h3>
+            Participaras continua y activamente en la elaboración de tus
+            productos, siempre sabras en que estamos
+          </h3>
         </div>
-      </div>
-      <div>
-        <img src='' alt='' />
-        <div>
-          Usamos medotologias agiles y potentes técnologias para conseguir los
-          resultados esperados y no desviarnos del camino
+        <div className='our-benefit'>
+          <img src={group} alt='' />
+          <h3>
+            Usando medotologias agiles y potentes técnologias conseguiremos los
+            productos esperados
+          </h3>
         </div>
-      </div>
+      </Carousel>
     </div>
   );
 }

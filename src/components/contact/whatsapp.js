@@ -1,10 +1,12 @@
+import '../../static/styles/components/contact/whatsapp.less'
+import whatsapp from '../../static/img/whatsapp.png';
+
 function WhatsApp() {
   return (
-    <div id='whatsApp'>
-      <h1>¡Comienza hoy!</h1>
+    <div id='whatsapp'>
+      <h1>¡Comienza HOY!</h1>
       <h2>Cotiza con nosotros</h2>
-      <span>Opción 1</span>
-      <button>WhatsApp</button>
+      <img src={whatsapp}></img>
       <p>Horario de atención</p>
       <p>Lunes a Viernes</p>
       <p>9:00 a 19:00</p>

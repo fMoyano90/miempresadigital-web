@@ -1,8 +1,47 @@
+@font-face {
+    font-family: leagueSpartan;
+    src: url('../../font/LeagueSpartan-VariableFont_wght.ttf');
+ }
+
+
 #benefits {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px 150px 100px;
+    background-color: #FFFFFF;
+
+    div{
+        text-align: center;
+        h1{
+            font-weight: bold;
+        }
+    }
     .benefit{
         display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
         .benefit-img{
-            height: 100px;
+            align-self: center;
+            img{
+                height: 100px;
+            }
         }
+        .benefit-text{
+            .title{
+                font-size: 21px;
+                font-weight: bold;
+                font-family: leagueSpartan;
+            }
+            .description{
+                margin-top: 15px;
+                font-size: 18px; 
+            }
+        }
+        div{
+            width: 600px;
+            text-align: center;
+            align-self: center;
+        }
+        
     }
 }

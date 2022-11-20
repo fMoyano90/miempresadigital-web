@@ -1,9 +1,10 @@
+import "../../static/styles/components/contact/form.less";
+
 function Form() {
   return (
     <div id='form'>
       <h3>Nos importan tus ideas</h3>
       <p>En menos de 48 horas nos pondremos en contacto</p>
-      <span>Opción 2</span>
       <form>
         <div>
           <label>Nombre de requiriente</label>
@@ -18,19 +19,19 @@ function Form() {
           <input></input>
         </div>
         <div>
-          <label>Corre electronico</label>
+          <label>Correo electrónico</label>
           <input></input>
         </div>
         <div>
           <label>Cantidad de empleados</label>
-          <select></select>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
         </div>
         <div>
-          <label>Necesidad de la empresa</label>
-          <select></select>
-        </div>
-        <div>
-          <label>Descipcion del proyecto</label>
+          <label>Descipción del proyecto</label>
           <textarea />
         </div>
         <button>Enviar</button>

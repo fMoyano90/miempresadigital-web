@@ -4,6 +4,7 @@ import Benefits from "../components/benefits";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import '../static/styles/home.less';
 
 function Home() {
   return (

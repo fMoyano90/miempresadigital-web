@@ -1,14 +1,19 @@
-import '../static/styles/components/hero.less';
-import hero from '../static/img/hero.jpg';
+import "../static/styles/components/hero.less";
+import hero from "../static/img/hero.mp4";
+import heroText from "../static/img/hero-text.mp4";
 
 function Hero() {
   return (
     <div id='hero'>
       <div className='title'>
-        <h1>Di Hola Mundo y comienza tu negocio en linea</h1>
+        <video width='850' height='600' autoPlay muted>
+          <source src={heroText} type='video/mp4' />
+        </video>
       </div>
       <div className='img-hero'>
-        <img src={hero} alt='' />
+        <video width='850' height='600' autoPlay loop muted>
+          <source src={hero} type='video/mp4' />
+        </video>
       </div>
     </div>
   );
