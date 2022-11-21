@@ -34,7 +34,7 @@ function Form() {
           <label>Descipción del proyecto</label>
           <textarea />
         </div>
-        <button>Enviar</button>
+        <button>ENVIAR</button>
       </form>
     </div>
   );

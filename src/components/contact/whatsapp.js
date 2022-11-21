@@ -1,5 +1,5 @@
-import '../../static/styles/components/contact/whatsapp.less'
-import whatsapp from '../../static/img/whatsapp.png';
+import "../../static/styles/components/contact/whatsapp.less";
+import whatsapp from "../../static/img/whatsapp.png";
 
 function WhatsApp() {
   return (

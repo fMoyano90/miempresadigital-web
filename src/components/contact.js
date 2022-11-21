@@ -1,10 +1,10 @@
 import Form from "./contact/form";
 import WhatsApp from "./contact/whatsapp";
-import '../static/styles/components/contact.less';
+import "../static/styles/components/contact.less";
 
 function Contact() {
   return (
-    <div id="contact">
+    <div id='contact'>
       <WhatsApp />
       <Form />
     </div>
