@@ -39,6 +39,59 @@
     }
 }
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    #hero {
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            align-self: center;
+            video{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .video-hero {
+            video {
+                display: none;
+            }
+        }
+    }
+}
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    #hero {
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            align-self: center;
+            video{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .video-hero {
+            video {
+                display: none;
+            }
+        }
+    }
+}
+// Large devices (landscape tablets and small desktop, less than 1480px)
+@media (max-width: 1478.98px) {
+    #hero {
+        .title {
+            align-self: center;
+            video{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .video-hero {
+            align-self: center;
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -91,9 +91,105 @@
             flex-direction: column-reverse;
         }
     }
-    
 }
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    #benefits {
+        padding: 50px 30px 150px 30px;
+        .benefits-title{
+            margin-top: 100px;
+            h1{
+                font-size: 34px;
+            }
+            h2{
+                font-size: 16px;
+            }
+        }
+        .benefit{
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 80px;
+            .benefit-img{
+                img{
+                    height: 100px;
+                }
+            }
+            .benefit-text{
+                .title{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .description{
+                    width: 100%;
+                    font-size: 16px; 
+                }
+            }
+            div{
+                width: 100%;
+            }
+            
+        }
+        .benefit.change-order{
+            flex-direction: column-reverse;
+        }
+    }
+}
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    #benefits {
+        padding: 50px 30px 150px 30px;
+        .benefit{
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 80px;
+            .benefit-img{
+                img{
+                    height: 100px;
+                }
+            }
+            .benefit-text{
+                .title{
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+                .description{
+                    font-size: 24px; 
+                }
+            }
+            div{
+                width: 100%;
+            }
+            
+        }
+        .benefit.change-order{
+            flex-direction: column-reverse;
+        }
+    }
+}
+// Large devices (landscape tablets and small desktop, less than 1480px)
+@media (max-width: 1478.98px) {
+    #benefits {
+        padding: 50px 30px 150px 30px;
+        .benefit{
+            margin-top: 80px;
+            .benefit-img{
+                img{
+                    height: 100px;
+                }
+            }
+            .benefit-text{
+                .title{
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+                .description{
+                    font-size: 24px; 
+                }
+            }
+            div{
+                width: 100%;
+            }
+            
+        }
+    }
+}
