@@ -1,22 +1,19 @@
-@font-face {
-    font-family: leagueSpartan;
-    src: url('../../font/LeagueSpartan-VariableFont_wght.ttf');
- }
-
+@import '../utils/fonts.less';
+@import '../utils/colors.less';
 
 #benefits {
     display: flex;
     flex-direction: column;
     padding: 20px 100px 150px 100px;
-    background-color: #FFFFFF;
+    background-color: @white;
 
     .benefits-title{
         text-align: center;
         h1{
             font-weight: bold;
-            font-family: leagueSpartan;
+            font-family: @font-title;
             font-size: 42px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            text-shadow: 1px 1px 5px @st-black;
         }
         h2{
             text-transform: uppercase;
@@ -37,6 +34,7 @@
             .title{
                 font-size: 24px;
                 font-weight: bold;
+                margin-top: 10px;
             }
             .description{
                 margin-top: 15px;
@@ -51,3 +49,51 @@
         
     }
 }
+
+// Small devices (portrait phones, less 576px)
+@media (max-width: 575.98px) {
+    #benefits {
+        padding: 50px 30px 150px 30px;
+        .benefits-title{
+            margin-top: 100px;
+            h1{
+                font-size: 34px;
+            }
+            h2{
+                font-size: 16px;
+            }
+        }
+        .benefit{
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 80px;
+            .benefit-img{
+                img{
+                    height: 100px;
+                }
+            }
+            .benefit-text{
+                .title{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .description{
+                    width: 100%;
+                    font-size: 16px; 
+                }
+            }
+            div{
+                width: 100%;
+            }
+            
+        }
+        .benefit.change-order{
+            flex-direction: column-reverse;
+        }
+    }
+    
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}

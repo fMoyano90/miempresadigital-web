@@ -6,12 +6,12 @@ function Hero() {
   return (
     <div id='hero'>
       <div className='title'>
-        <video width='850' height='600' autoPlay muted>
+        <video autoPlay muted>
           <source src={heroText} type='video/mp4' />
         </video>
       </div>
-      <div className='img-hero'>
-        <video width='850' height='600' autoPlay loop muted>
+      <div className='video-hero'>
+        <video autoPlay loop muted>
           <source src={hero} type='video/mp4' />
         </video>
       </div>

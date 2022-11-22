@@ -1,10 +1,12 @@
+@import '../../utils/colors.less';
+
 #form {
     margin-bottom: 40px;
     margin-top: 40px;
     padding: 20px 50px 40px 50px;
-    background-color: #F0D91B;
+    background-color: @yellow;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px @st-black;
     h3{
         font-size: 24px;
     }
@@ -44,14 +46,26 @@
             height: 35px;
             border-radius: 8px;
             font-weight: bold;
-            background-color: #F0D91B;
+            background-color: @yellow;
             transition: 0.5s;
             cursor: pointer;
         }
         button:hover{
-            background-color: black;
-            color: white;
+            background-color: @black;
+            color: @white;
             font-size: 18px;
         }
     }
 }
+
+// Small devices (portrait phones, less 576px)
+@media (max-width: 575.98px) {
+    #form {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}

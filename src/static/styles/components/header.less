@@ -1,3 +1,5 @@
+@import '../utils/colors.less';
+
 #header {
     background-image: url('../../../static/img/bg-header.png');
     background-repeat: no-repeat;
@@ -10,7 +12,7 @@
         flex-direction: row;
         justify-content: space-around;
         p{
-            color: white;
+            color: @white;
         }
         padding-top: 10px;
         padding-bottom: 10px;
@@ -18,7 +20,7 @@
     .menu{
         display: flex;
         justify-content: center;
-        color: white;
+        color: @white;
         padding-bottom: 30px;
         padding-top: 10px;
         img{
@@ -26,3 +28,21 @@
         }
     }
 }
+
+// Small devices (portrait phones, less 576px)
+@media (max-width: 575.98px) {
+    #header {
+        background-image: none;
+        background-color: @black;
+        height: 200px;
+        .menu{
+            img{
+                width: 200px;
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
