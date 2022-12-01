@@ -90,7 +90,6 @@ function Form() {
       sendForm();
       cleanForm();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formErrors]);
 
   return (

@@ -76,8 +76,15 @@
       "react-app",
       "react-app/jest"
     ],
-    "env": {
+    "env":{
       "NODE_ENV": "development"
+    },
+    "parserOptions": {
+      "babelOptions": {
+        "presets": [
+          ["babel-preset-react-app", false]
+        ]
+      }
     }
   },
   "browserslist": {
