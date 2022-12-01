@@ -3,7 +3,7 @@ import group from "../static/img/group.png";
 import handshake from "../static/img/handshake.png";
 import connection from "../static/img/connection.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 const settingsCarousel = {
   autoPlay: true,
@@ -12,7 +12,7 @@ const settingsCarousel = {
   showIndicators: false,
   showThumbs: false,
   interval: 5000,
-}
+};
 
 function About() {
   return (
@@ -22,7 +22,7 @@ function About() {
         <div className='our-benefit'>
           <img src={group} alt='' />
           <h3>
-            1. Un equipo multidiciplinario se encargara del desarrollo y de las
+            1. Un equipo multidisciplinario se encargara del desarrollo y de las
             mejoras continuas en tus productos
           </h3>
         </div>
@@ -36,8 +36,8 @@ function About() {
         <div className='our-benefit'>
           <img src={connection} alt='' />
           <h3>
-            3. Usando medotologias agiles y potentes técnologias conseguiremos los
-            productos esperados
+            3. Usando metodologías ágiles y potentes tecnologías conseguiremos
+            los productos esperados
           </h3>
         </div>
       </Carousel>

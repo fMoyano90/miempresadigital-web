@@ -7,11 +7,11 @@ function WhatsApp() {
       <h1>¡Comienza HOY!</h1>
       <h2>Cotiza con nosotros</h2>
       <a
-        href="https://walink.co/aa4929"
-        target="_blank"
-        rel="noopener noreferrer"
+        href='https://walink.co/aa4929'
+        target='_blank'
+        rel='noopener noreferrer'
       >
-        <img src={whatsapp}></img>
+        <img src={whatsapp} alt=''></img>
       </a>
       <p>Horario de atención</p>
       <p>Lunes a Viernes</p>

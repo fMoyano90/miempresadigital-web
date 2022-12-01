@@ -10,6 +10,7 @@ import improvement from "../static/img/improvement.png";
 function Benefits() {
   window.mobileCheck = function () {
     let check = false;
+    /* eslint-disable no-useless-escape */
     (function (a) {
       if (
         /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
@@ -48,7 +49,7 @@ function Benefits() {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__fadeInRight'>
           <div className='benefit-text'>
-            <div className='title'>1. Manten tu negocio abierto 24/7</div>
+            <div className='title'>1. Mantén tu negocio abierto 24/7</div>
             <div className='description'>
               Desde internet puedes mantener tu negocio abierto a toda hora,
               todos los días del año, incluso mientras tú y tus trabajadores
@@ -60,9 +61,9 @@ function Benefits() {
       <div className='benefit change-order'>
         <AnimationOnScroll animateIn='animate__fadeInUp'>
           <div className='benefit-text'>
-            <div className='title'>2. Rompe los limites geograficos</div>
+            <div className='title'>2. Rompe los limites geográficos</div>
             <div className='description'>
-              Lleva tus productos o servicios a otros lugares y obten la
+              Lleva tus productos o servicios a otros lugares y obtén la
               posibilidad de expandir tu negocio.
             </div>
           </div>
@@ -83,8 +84,8 @@ function Benefits() {
           <div className='benefit-text'>
             <div className='title'>3. Llega a nuevos clientes</div>
             <div className='description'>
-              Miles de personas estan ahora mismo en internet, muchos de ellos
-              podrian estar buscando tus productos o servicios.
+              Miles de personas están ahora mismo en internet, muchos de ellos
+              podrían estar buscando tus productos o servicios.
             </div>
           </div>
         </AnimationOnScroll>
