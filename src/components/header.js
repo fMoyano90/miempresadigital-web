@@ -13,7 +13,7 @@ function Header() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <p>+569 3574 5548</p>
+          <p>+569 4012 7775</p>
         </a>
       </div>
       <div className='menu'>
